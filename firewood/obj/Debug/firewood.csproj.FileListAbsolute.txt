@@ -1,0 +1,12 @@
+f:\visual studio 2013\Projects\firewood\firewood\bin\firewood.dll.config
+f:\visual studio 2013\Projects\firewood\firewood\bin\firewood.dll
+f:\visual studio 2013\Projects\firewood\firewood\bin\firewood.pdb
+f:\visual studio 2013\Projects\firewood\firewood\obj\Debug\firewood.csprojResolveAssemblyReference.cache
+f:\visual studio 2013\Projects\firewood\firewood\obj\Debug\firewood.dll
+f:\visual studio 2013\Projects\firewood\firewood\obj\Debug\firewood.pdb
+f:\visual studio 2013\Projects\firewood\firewood\bin\BADL.dll
+f:\visual studio 2013\Projects\firewood\firewood\bin\Common.dll
+f:\visual studio 2013\Projects\firewood\firewood\bin\Entity.dll
+f:\visual studio 2013\Projects\firewood\firewood\bin\BADL.pdb
+f:\visual studio 2013\Projects\firewood\firewood\bin\Common.pdb
+f:\visual studio 2013\Projects\firewood\firewood\bin\Entity.pdb

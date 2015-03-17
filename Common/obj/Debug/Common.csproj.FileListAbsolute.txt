@@ -1,0 +1,5 @@
+f:\visual studio 2013\Projects\firewood\Common\bin\Debug\Common.dll
+f:\visual studio 2013\Projects\firewood\Common\bin\Debug\Common.pdb
+f:\visual studio 2013\Projects\firewood\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+f:\visual studio 2013\Projects\firewood\Common\obj\Debug\Common.dll
+f:\visual studio 2013\Projects\firewood\Common\obj\Debug\Common.pdb

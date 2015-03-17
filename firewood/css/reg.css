@@ -1,0 +1,27 @@
+#index-nav{
+	background-image: url("../img/nav-sm-bg.png");
+}
+#reg-main{
+	width: 100%;
+	border: 1px solid #fbb04b;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+#reg-main h3{
+	color: #a49c95;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 700;
+}
+#reg-main .control-label{
+	font-size: 1.125em;
+	color: #504a45;
+}
+#reg-well{
+	width: 100%;
+	margin-top: 20px;
+}
+#uNameP,#uMailP,#uPwdP,#uCheckP{
+    color: #ff0000;
+}

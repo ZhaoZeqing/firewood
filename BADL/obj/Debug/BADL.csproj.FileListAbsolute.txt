@@ -1,0 +1,9 @@
+f:\visual studio 2013\Projects\firewood\BADL\bin\Debug\BADL.dll
+f:\visual studio 2013\Projects\firewood\BADL\bin\Debug\BADL.pdb
+f:\visual studio 2013\Projects\firewood\BADL\bin\Debug\Common.dll
+f:\visual studio 2013\Projects\firewood\BADL\bin\Debug\Entity.dll
+f:\visual studio 2013\Projects\firewood\BADL\bin\Debug\Common.pdb
+f:\visual studio 2013\Projects\firewood\BADL\bin\Debug\Entity.pdb
+f:\visual studio 2013\Projects\firewood\BADL\obj\Debug\BADL.csprojResolveAssemblyReference.cache
+f:\visual studio 2013\Projects\firewood\BADL\obj\Debug\BADL.dll
+f:\visual studio 2013\Projects\firewood\BADL\obj\Debug\BADL.pdb

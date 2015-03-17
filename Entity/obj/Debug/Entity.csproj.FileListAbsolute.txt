@@ -1,0 +1,5 @@
+f:\visual studio 2013\Projects\firewood\Entity\bin\Debug\Entity.dll
+f:\visual studio 2013\Projects\firewood\Entity\bin\Debug\Entity.pdb
+f:\visual studio 2013\Projects\firewood\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+f:\visual studio 2013\Projects\firewood\Entity\obj\Debug\Entity.dll
+f:\visual studio 2013\Projects\firewood\Entity\obj\Debug\Entity.pdb

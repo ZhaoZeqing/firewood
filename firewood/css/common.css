@@ -1,0 +1,46 @@
+html {
+    font-size: 100%;
+}
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+body {
+    background-color: #fffbf3;
+    font: normal 1em "Microsoft Yahei";
+}
+li, a, div, button {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    /* Firefox 4 */    
+    -webkit-transition: all 0.3s;
+    /* Safari 和 Chrome */    
+    -o-transition: all 0.3s;
+    /* Opera */
+}
+a {
+    text-decoration: none;
+    color: #a1a1a1;
+}
+a:hover {
+    color: #fb954b;
+    text-decoration: none;
+}
+.center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 992px) {
+    .center {
+        width: 40%;
+    }
+}
+.control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}

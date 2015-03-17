@@ -1,0 +1,37 @@
+/*=====mobile-nav=====*/
+#index-mobile-nav{
+    height: 40px;
+    margin-top: 10px;
+    background-color: #fdb863;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#index-mobile-nav ul{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+#index-mobile-nav li{
+    padding: 0 3%;
+    list-style-type: none;
+    display: inline;
+    color: #fff;
+    font-size: 1.25em;
+}
+@media only screen and (max-width: 478px){
+    #index-mobile-nav li{
+        padding: 0 0.8%;
+    }
+}
+#index-mobile-nav a{
+    color: #fff;
+}
+/*=====mobile-footer=====*/
+footer{
+    color: #c5c5c5;
+    font-size: 0.875em;
+    margin-top: 40px;
+}
+footer p{
+    text-align: center;    
+}
