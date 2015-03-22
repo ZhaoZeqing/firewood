@@ -130,7 +130,7 @@ namespace Entity
 
         public En_Activity() { }
 
-        public En_Activity(int _activityid, string _aName, int _orgid, string _class1, string _class2, string _place, DateTime _begintime, DateTime _endtime, int _moneystate, int _scorestate, int _awardstate, int _votestate, string _aintroduction, string _apic, int _state)
+        public En_Activity(Guid _activityid, string _aName, int _orgid, string _class1, string _class2, string _place, DateTime _begintime, DateTime _endtime, int _moneystate, int _scorestate, int _awardstate, int _votestate, string _aintroduction, string _apic, int _state)
         {
             activityID = _activityid;
             aName = _aName;

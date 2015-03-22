@@ -1,4 +1,4 @@
-#nav-top {
+.nav-top {
     width: 100%;
     height: 35px;
     line-height: 35px;
@@ -6,10 +6,14 @@
     background-color: #ececec;
     padding-left: 2%;
 }
-#nav-top li {
+.nav-top li {
     list-style-type: none;
     display: inline;
     padding-right: 1.5%;
+}
+#manage{
+    margin-left: 36%;
+    display: none;
 }
 #index-head {
     padding: 40px 0 30px;

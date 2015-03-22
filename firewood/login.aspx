@@ -52,7 +52,7 @@
                         <div class="form-group">
                             <div class="col-md-4 col-sm-6 col-xs-6 col-md-offset-4">
                                 <div class="checkbox" style="margin-left:20px">
-                                    <input type="checkbox" id="savePwd" runat="server" required />
+                                    <input type="checkbox" id="savePwd" runat="server" />
                                     记住密码
                                 </div>
                             </div>

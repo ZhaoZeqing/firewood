@@ -49,7 +49,7 @@ namespace firewood
             En_User user = BADL_User.Login(RegularExpressions.MyEncodeInputString(uInfo.Value.Trim()), Md5.MD5_encrypt(RegularExpressions.MyEncodeInputString(uPwd.Value.Trim())));
             if (user != null)
             {
-                Session["User"] = user;//写入session
+                Session["User"] = user;//将user写入session
 
                 if (!BADL_User.ChangeLogInfor(user.UNum, DateTime.Now))//更新登录时间异常
                 {
@@ -61,6 +61,14 @@ namespace firewood
                     cookieUserName.Value = user.UName;
                     cookieUserName.Expires = System.DateTime.Now.AddDays(1);
                     Response.Cookies.Add(cookieUserName);
+
+                    string userRole = BADL_User.GetUserRole(user.UNum);//得到用户的角色
+                    Session["UserRole"] = userRole;//将userRole写入session,一般用户的role为"0"
+                    HttpCookie cookieUserRole = new HttpCookie("UserRole");//将userRole写入cookie
+                    cookieUserRole.Value = userRole;
+                    cookieUserRole.Expires = System.DateTime.Now.AddDays(1);
+                    Response.Cookies.Add(cookieUserRole);
+
 
                     if (savePwd.Checked)//如果用户记住密码，将学号和登录密码写入cookie
                     {

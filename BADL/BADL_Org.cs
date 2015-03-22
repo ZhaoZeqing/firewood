@@ -11,7 +11,7 @@ using System.Configuration;
 
 namespace BADL
 {
-    class BADL_Org
+    public class BADL_Org
     {
         static string constr = System.Configuration.ConfigurationManager.ConnectionStrings["conFirewood"].ConnectionString;
         public static bool InsertOrg(En_Org org)//注册

@@ -1,4 +1,9 @@
-$(function () {
+$(document).ready(function () {
+    showSth();
+});
+
+function showSth() {
+    //登录后的菜单显示
     $('#user-btn,#menu-on').mouseover(function(event) {
         $('#menu-on').show();
         $('#user-btn').css({ transform: 'translate(-5px, 0)'});
@@ -7,43 +12,39 @@ $(function () {
         $('#user-btn').css({transform: 'translate(0, 0)'});
     });
 
+    //登录后的昵称显示
     var cookieUserName = getCookie("UserName");
+    var uname = $('#nav-uname');
     if (cookieUserName.length > 0)
     {
-        $("#log-reg").hide();
-        $("#nav-user").show();
-        $("#nav-uname").text(cookieUserName);
+        $('#log-reg').hide();
+        $('#nav-user').show();
+        uname.text(cookieUserName);
     }
     else {
-        $("#log-reg").show();
+        $('#log-reg').show();
     }
 
-    var uname = $('#nav-uname');
-    if (textSize("14px", uname.text()).width > 100) {
+    //昵称太长的话...
+    if (getCurrentStrWidth(cookieUserName,'14px') > 100) {
         var i = uname.text().length;
-        while (textSize("14px", uname.text() + "...").width >= 100) {
+        while (getCurrentStrWidth(uname.text() + '...', '14px') >= 100) {
             uname.text(uname.text().substr(0, i));
             i--;
         }
-        uname.text(uname.text() + "...");
+        uname.text(uname.text() + '...');
     }
-});
 
-function textSize(fontSize, text) {
-    var span = document.createElement("span");
-    var result = {};
-    result.width = span.offsetWidth;
-    result.height = span.offsetWidth;
-    span.style.visibility = "hidden";
-    document.body.appendChild(span);
-    if (typeof span.textContent != "undefined")
-        span.textContent = text;
-    else span.innerText = text;
-    result.width = span.offsetWidth - result.width;
-    result.height = span.offsetHeight - result.height;
-    span.parentNode.removeChild(span);
-    return result;
+    //判断用户角色，是否显示后台管理
+    var cookieUserRole = getCookie('UserRole');
+    if (cookieUserRole == 'firewoodAdmin' || cookieUserRole == 'Admin') {
+        $('#manage').css('display','inline');
+    }
+    else {
+        $('#manage').hide();
+    }
 }
+//从cookie获取昵称
 function getCookie(c_name) {
     if (document.cookie.length > 0) {
         c_start = document.cookie.indexOf(c_name + "=")
@@ -56,6 +57,15 @@ function getCookie(c_name) {
     }
     return "";
 }
+//测量昵称的实际长度
+function getCurrentStrWidth(text, font) {
+    var currentObj = $('<pre>').hide().appendTo(document.body);
+    $(currentObj).html(text).css('font', font);
+    var width = currentObj.width();
+    currentObj.remove();
+    return width;
+}
+
 //==========================================================User Register
 function uNamePost() {
     var uName = $('#uName').val();
@@ -69,7 +79,7 @@ function uNamePost() {
         beforesend: function () { },
         success: function (data) {
             var result = data.d;
-            sthExit(result);
+            sthExit(result,'uName');
         },
         error: function (err) {
             alert(err);
@@ -116,11 +126,24 @@ function uCheckPost() {
     });
 }
 
-function sthExit(n){
-    if (n == "0") {
+function sthExit(data,x) {
+    var n = data.split(';');
+    var textName = n[0];
+    if (n == 1) {
+        $('#'+textName+'P').text("");
+    }
+    else {
+        $('#' + textName + 'P').text("昵称存在！");
+        $('#' + textName + '').bind('input propertychange', function () {
+            if (x == 'uName') {
+                uName = $('#' + textName + '').val();
+            }
+        });
+    }
+    /*if (n == "0") {
         $('#uNameP').text("");
     }
-    else if(n == "1"){
+    else if (n == "1") {
         $('#uNameP').text("昵称存在！");
         $('#uName').bind('input propertychange', function () {
             uName = $('#uName').val();
@@ -146,9 +169,9 @@ function sthExit(n){
     }
     else if (n == "6") {
         $("#uCheckP").text("验证码生成错误！");
-    }
+    }*/
 }
-$(function () {
+/*$(function () {
     var uName, uMail, uCheck, pwd, pwd1;
 
     $('#uName').bind('input propertychange', function () {
@@ -173,4 +196,4 @@ $(function () {
             $("#uPwdP").text("");
         }
     });
-});
+});*/

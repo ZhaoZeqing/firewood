@@ -1,5 +1,5 @@
 ﻿<!--Top-->
-<ul class="hidden-xs hidden-sm" id="nav-top">
+<ul class="hidden-xs hidden-sm nav-top">
     <li><a href="http://www.ghy.cn" title="光华园">光华园</a>
     </li>
     <li><a href="http://www.ghy.cn/swufenews" title="新闻">新闻</a>
@@ -19,5 +19,7 @@
     <li><a href="http://soft.ghy.cn" title="软件">软件</a>
     </li>
     <li><a href="http://bbs.ghy.cn" title="草堂茗香">草堂茗香</a>
+    </li>
+    <li id="manage"><a href="../org/manage.aspx" title="后台管理">后台管理</a>
     </li>
 </ul>

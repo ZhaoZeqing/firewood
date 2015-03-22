@@ -216,12 +216,12 @@ namespace BADL
             string sql = "update [user] set uPwd='" + pwd + "' where uNum='" + worknum + "'";
             return helper.ExecuteNonQuery(constr, CommandType.Text, sql) == 1 ? true : false;
         }
-        public static int GetUserID(string worknum)//由学号获得id
+        public static string GetUserID(string worknum)//由学号获得id
         {
             SqlHelper helper = new SqlHelper();
             string sql = "select [uID] from [user] where uNum='" + worknum + "'";
             object result = helper.ExecuteScalar(constr, CommandType.Text, sql);
-            return result == null ? 0 : Int32.Parse(result.ToString());
+            return result == null ? "0" : result.ToString();
         }
         public static string GetUserName(string worknum)//由学号获得昵称
         {
@@ -236,6 +236,14 @@ namespace BADL
             string sql = "select [uMail] from [user] where uNum='" + worknum + "'";
             object result = helper.ExecuteScalar(constr, CommandType.Text, sql);
             return result == null ? "" : result.ToString();
+        }
+
+        public static string GetUserRole(string worknum)//由学号获得用户角色
+        {
+            SqlHelper helper = new SqlHelper();
+            string sql = "select [roleName] from [role],[user-role] where [role].[roleID] = [user-role].[roleID] and [uID]='" + GetUserID(worknum) + "'";
+            object result = helper.ExecuteScalar(constr, CommandType.Text, sql);
+            return result == null ? "0" : result.ToString();
         }
     }
 }

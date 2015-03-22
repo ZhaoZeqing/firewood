@@ -2,7 +2,7 @@
 <!--Head-->
 <div class="row hidden-xs hidden-sm" id="index-head">
     <div class="col-md-9">
-        <span id="index-logo">柴火</span>
+        <img src="../img/logo.png" />
     </div>
     <div class="col-md-3">
         <form action="">

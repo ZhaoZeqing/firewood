@@ -25,3 +25,12 @@
 #uNameP,#uMailP,#uPwdP,#uCheckP{
     color: #ff0000;
 }
+/*===manage css===*/
+.tab-pane{
+    background-color:#fff;
+    padding:40px 0;
+    border-radius:0 0 5px 5px;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}

@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace firewood {
+namespace firewood.org {
     
     
-    public partial class uReg {
+    public partial class manage {
         
         /// <summary>
         /// top 控件。
@@ -22,76 +22,85 @@ namespace firewood {
         protected global::System.Web.UI.UserControl top;
         
         /// <summary>
-        /// head 控件。
+        /// orgName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::firewood.control.head head;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText orgName;
         
         /// <summary>
-        /// uNum 控件。
+        /// orgPwd 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText uNum;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword orgPwd;
         
         /// <summary>
-        /// uNumPwd 控件。
+        /// orgPwd1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword uNumPwd;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword orgPwd1;
         
         /// <summary>
-        /// uName 控件。
+        /// orgPrincipal 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText uName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText orgPrincipal;
         
         /// <summary>
-        /// uMail 控件。
+        /// orgTel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl uMail;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText orgTel;
         
         /// <summary>
-        /// pwd 控件。
+        /// orgDepartment 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword pwd;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText orgDepartment;
         
         /// <summary>
-        /// pwd1 控件。
+        /// orgIntroduction 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword pwd1;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea orgIntroduction;
         
         /// <summary>
-        /// uCheck 控件。
+        /// orgContact 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText uCheck;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText orgContact;
+        
+        /// <summary>
+        /// orgNameDel 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText orgNameDel;
         
         /// <summary>
         /// foot 控件。

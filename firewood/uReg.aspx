@@ -36,6 +36,20 @@
                 <div class="center">
                     <form class="form-horizontal" runat="server">
                         <div class="form-group">
+                            <label class="col-sm-4 control-label">—ß∫≈</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="uNum" runat="server" maxlength="50" required />
+                                <p class="help-block" id="uNumP"></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">…œÕ¯√‹¬Î</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="uNumPwd" runat="server" maxlength="50" required/>
+                                <p class="help-block" id="uNumPwdP"></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-sm-4 control-label">Í«≥∆</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="uName" runat="server" maxlength="10" required />
